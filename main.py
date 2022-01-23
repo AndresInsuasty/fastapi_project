@@ -113,8 +113,8 @@ def delete_a_user():
 def update_a_user():
     pass
 
+######################################################
 ## Tweets
-
 ### Show all tweets
 @app.get(
     path="/",
@@ -125,7 +125,6 @@ def update_a_user():
     )
 def home():
     return {'twitter API':'Working'}
-
 
 ### Post a tweet
 @app.post(
@@ -160,7 +159,7 @@ def show_a_tweet():
 def delete_a_tweet():
     pass
 
-### Delete a tweet
+### Update a tweet
 @app.put(
     path="/tweets/{tweet_id}/update",
     response_model=Tweet,
